@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "mybatis.map-userscore-to-camel-case",
+  "type": "java.lang.String",
+  "description": "A description for 'mybatis.map-userscore-to-camel-case'"
+}]}
