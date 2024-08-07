@@ -37,6 +37,7 @@ public class GlobalControllerAdvice {
 	// 1. @RestControllerAdvice 를 사용하면 된다.
 	// 단. @ControllerAdvice 를 사용하고 있다면 @ResponseBody 를 붙여 사용하면 된다.
 	
+	@ResponseBody
 	@ExceptionHandler(DataDeliveryException.class)
 	public String dataDeleveryException(DataDeliveryException e) {
 		// 문자열 <-- 멀티스레드 프로그래밍!

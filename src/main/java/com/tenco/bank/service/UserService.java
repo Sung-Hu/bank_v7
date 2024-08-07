@@ -34,7 +34,7 @@ public class UserService {
 		try {
 			result = userRepository.insert(dto.toUser());
 		} catch (DataAccessException e) {
-			throw new DataDeliveryException("잘못된 처리입니다", HttpStatus.INTERNAL_SERVER_ERROR);
+			throw new DataDeliveryException("중복된 이름을 사용할 수 없습니다", HttpStatus.INTERNAL_SERVER_ERROR);
 		} catch (Exception e) {
 			throw new RedirectException("알 수 없는 오류", HttpStatus.SERVICE_UNAVAILABLE);
 		}
