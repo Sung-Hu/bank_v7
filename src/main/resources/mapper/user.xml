@@ -13,7 +13,7 @@
 	<update id="updateById">
 		update user_tb set username = #{username}, 
 		                   password = #{password}, 
-		                   fullname = #{fullname},
+		                   fullname = #{fullname}
 		                   where id = #{id} 
 	</update>
 	

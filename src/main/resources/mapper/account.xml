@@ -24,7 +24,7 @@
 		select * from account_tb where user_id = #{userId} 
 	</select>
 	
-	<select id="findByNumber"  resultType="com.tenco.bank.repository.model.Account">
+	<select id="findByNumber" resultType="com.tenco.bank.repository.model.Account">
 		select * from account_tb where number = #{number}
 	</select>
 	
